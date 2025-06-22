@@ -6,7 +6,7 @@ import asyncio
 
 app = FastAPI()
 
-# Allow frontend (Streamlit) to access this API
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # For production, restrict this to your frontend domain
@@ -45,3 +45,8 @@ async def analyze_endpoint(request: Request):
         return {"result": result}
     except Exception as e:
         return {"error": str(e)}
+
+
+@app.get("/")
+def root():
+    return {"status": "Backend is live!"}
