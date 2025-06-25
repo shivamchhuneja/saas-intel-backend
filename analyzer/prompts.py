@@ -5,23 +5,24 @@ def build_prompt(text: str, mode: str) -> str:
     if mode == "clarity":
         return f"""You're a SaaS marketing expert and homepage clarity strategist. Analyze the homepage below and return the following:
 
-1. **Offer Clarity Score (1–10)** — Give a score and explain why you gave it, with a focus on how clearly the product and its benefit are conveyed above the fold.
+1. Offer Clarity Score (1–10) Give a score and explain why you gave it, with a focus on how clearly the product and its benefit are conveyed above the fold.
 
-2. **Target Audience Guess** — Based on the language, tone, and pitch, who is this homepage really speaking to?
+2. Target Audience Guess Based on the language, tone, and pitch, who is this homepage really speaking to?
 
-3. **Emotional Resonance Check** — Does the copy appeal to a specific pain, desire, or frustration of that audience? If not, what’s missing emotionally?
 
-4. **Summary of the Problem Being Solved and How** — Explain the core user problem and how this SaaS claims to solve it.
+3. Emotional Resonance Check Does the copy appeal to a specific pain, desire, or frustration of that audience? If not, what’s missing emotionally?
 
-5. **Clarity Risks or Mismatches** — Are there parts of the copy that might confuse or alienate certain personas? Point out technical jargon, vague buzzwords, or unclear metaphors.
+4. Summary of the Problem Being Solved and How Explain the core user problem and how this SaaS claims to solve it.
 
-6. **Rewritten Hero Section** — Rewrite the top headline and subtext in a clear, compelling, and persona-focused way using the StoryBrand framework. Include a suggested CTA.
+5. Clarity Risks or Mismatches Are there parts of the copy that might confuse or alienate certain personas? Point out technical jargon, vague buzzwords, or unclear metaphors.
 
-7. **Quick Fixes vs Deeper Rewrite Suggestions** — Give 3–5 actionable clarity improvements, but separate them into:
+6. Rewritten Hero Section Rewrite the top headline and subtext in a clear, compelling, and persona-focused way using the StoryBrand framework. Include a suggested CTA.
+
+7. Quick Fixes vs Deeper Rewrite Suggestions Give 3–5 actionable clarity improvements, but separate them into:
    - Small Tweaks (language simplification, rewording)
    - Strategic Fixes (structure, audience focus, message hierarchy)
 
-8. **Missing Persuasion Hooks** — What psychological triggers could be added to increase clarity and conversion? (e.g., urgency, specificity, proof, authority)
+8. Missing Persuasion Hooks What psychological triggers could be added to increase clarity and conversion? (e.g., urgency, specificity, proof, authority)
 
 Homepage:
 {text}"""
